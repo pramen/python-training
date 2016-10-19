@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import itertools
-# import pprint
 
 class VigenereCipher(object):
 
@@ -37,7 +36,6 @@ class VigenereCipher(object):
             tmp_square.append(tuple(cycle.next() for _ in self.alphabet))
             cycle.next()
         self.square = tuple(tmp_square)
-        # pprint.pprint(self.square, width=150)
 
     def __keyfilled_msg(self, msg):
         """
