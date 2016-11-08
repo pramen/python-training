@@ -10,6 +10,7 @@ import cpuinfo
 
 
 class PingResource:
+
     def on_get(self, req, resp):
         pass
 
